@@ -9,13 +9,14 @@ script:
 deploy:
   provider: elasticbeanstalk
   aws_session_token: FwoGZXIvYXdzEPP//////////wEaDHO2onEPvYu21AyjNSLCAa0am8wUbe55ta4Sma1tRW52GSon38BMHy6qxN1y0Uei/0pR7KixasBm+1Cw+OyvqwCpZMFU47oSj4Khp+c604Bh6o7usGfRWAauhQ3hGfp64ad4jRm4C7zXCc7lxoDA4mGp7iVTE8YU+An9QKm0xLJb2AITOrbud3pLN18y3DuqjwmvB/GAMaHHx2wgA0wOQFQhp4H1o3xAhUlyMzwZQ7EPIF4REEZqsibecuQkWN+fvl1FD+iEOIYwsxwYpow8gEtKKP2rxfcFMi0aOhiloxjh8bEWy6e9fdfkJFkGPLu/ak1Mc4XHR9kxZV3DjKDQj5n3mCOF53w=
-  access_key_id: ASIATRTES7NXECGN5X5G
+  access_key_id: ASIATRTES7NXIKVKK446
   secret_access_key:
     secure: zyrWKoLtx8QmL0kNVEZ9aM9MB3/kYBkP0ifhUQiSIYpc2+xSK58hD0c6fgbD8vA214XjQzJrJ8gwf6D7xl22ugsPErtzg2MoGTfkeIxpZzO2BtFrBOJAcT7YOYbYBRiT0twcvilRySnnhpmTCMj/0uifkwADpQ1IJUEtMr7Z8lcYJsnjO9qc0tbtJ7L0HMUFAyVXxgFn5mxtf4tY3v0WmZcboCWgEkFzlMgROGqpxxI2Jb4bwzXSeHYKrjd778z4l4BO8xfyGYyy4LfepdQS/P48sciC37wpPj9ROrAazZaKM4CsBAUcAgtK9yGAwLnUXZhqe32EDkpdoy2OD4k5aRDuR2utwrGE2M9HHOwhrJOmTyLtPmUL7/0zc8ArUe+uW2NV6fS5XvMvPXQda8xJALcjgQ5Dh4ATni31Tb/meRCRzWePIjso2uUNGh65aTl3nFWBojY941Y/dGITRyFw81Cbzhgrl4/vtG3qvbiQUOOET0T2z7Mj+MBB6qmDpJpAKfHxZXEEA8/0IM28Edl1cfgdRo0FahYRcwDqZLg1ZWmH3vwEMfCGR2PACt7oDF0l3SxoAbKucdCaKdHKehEfiQjB8Pfr2xZ2rOPeuU1sRWJwBqLMiD0TvsDc7CWdgGzUQSrbTzThqGXwG62QHaaXta6nEO8MGK6S1aI64nJT4LY=
   region: us-east-1
   app: docker-react
   env: DockerReact-env
   bucket_name: elasticbeanstalk-us-east-1-243950353262
+  bucket_path: docker-react
   on:
-    repo: osamafayyaz3/docker-react
+    branch: master
   skip_cleanup: 'true'
