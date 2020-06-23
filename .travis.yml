@@ -10,13 +10,11 @@ deploy:
   provider: elasticbeanstalk
   access_key_id: $AWS_ACCESS_KEY
   secret_access_key: $AWS_SECRET_KEY
-  aws_session_token:
-    secure: "FwoGZXIvYXdzEPT//////////wEaDKMXyD0Vnw1fg+OBNiLCATz35b7XOVvwctn6NwOwjxnQ3vKZgZqeUP0J3VBAkcYsHo+2cLPblUdWkXI2xVh7X6Wk8rzwVinRYcd/+KiaE+JZWv9ocLP3SXV6L71TSS95IJKVGBBSg9OX/3EV4WN5UWX6pQcz/BSKCUErNlQsGio2jfWUGi/04QA9O60N0DxFNkKyAoeLoAa2+Ljpjgd5Ed7BVC7E9cNCvDQgasFrdRQHjXrzGUJKG8ZL43pPdQrlKja3EM7U7Z5Fe217sQ4PQPbnKLbJxfcFMi1zg9af/1jaj0tXfO71gZqXJOZEIV5ZDEaVCjgfHW9/d4Sr+lQtOznbGYtt4RA="
   region: us-east-1
-  app: docker-react
-  env: DockerReact-env
-  bucket_name: elasticbeanstalk-us-east-1-243950353262
-  bucket_path: docker-react
+  app: docker
+  env: Docker-env
+  bucket_name: elasticbeanstalk-us-east-1-796126655991
+  bucket_path: docker
   on:
     branch: master
-  skip_cleanup: 'true'
+  
