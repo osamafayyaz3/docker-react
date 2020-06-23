@@ -11,12 +11,9 @@ script:
 
 deploy:
     provider: elasticbeanstalk
-    access_key_id:
-        secure: "<access-key-id>=ASIATRTES7NXECGN5X5G"
-    secret_access_key:
-        secure: "<secret-access-key>=Lmpy5uCmnvT3M6i6604WXBSASZBkRz/7PR2R4C/e"
-    aws_session_token: 
-        secure: "<session-token>=FwoGZXIvYXdzEPP//////////wEaDHO2onEPvYu21AyjNSLCAa0am8wUbe55ta4Sma1tRW52GSon38BMHy6qxN1y0Uei/0pR7KixasBm+1Cw+OyvqwCpZMFU47oSj4Khp+c604Bh6o7usGfRWAauhQ3hGfp64ad4jRm4C7zXCc7lxoDA4mGp7iVTE8YU+An9QKm0xLJb2AITOrbud3pLN18y3DuqjwmvB/GAMaHHx2wgA0wOQFQhp4H1o3xAhUlyMzwZQ7EPIF4REEZqsibecuQkWN+fvl1FD+iEOIYwsxwYpow8gEtKKP2rxfcFMi0aOhiloxjh8bEWy6e9fdfkJFkGPLu/ak1Mc4XHR9kxZV3DjKDQj5n3mCOF53w="
+    access_key_id: $ACCESS_ID
+    secret_access_key: $SECRET_ID
+    aws_session_token: $SESSION_TOKEN
     region: "us-east-1"
     app: "docker-react"
     env: "DockerReact-env"
