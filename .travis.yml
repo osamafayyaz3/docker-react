@@ -8,8 +8,8 @@ script:
 - docker run -e CI=true osama85/docker-react npm run test -- --coverage
 deploy:
   provider: elasticbeanstalk
-  aws_access_key_id: $AWS_ACCESS_KEY
-  aws_secret_access_key: $AWS_SECRET_KEY
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key: $AWS_SECRET_KEY
   aws_session_token:
     secure: "FwoGZXIvYXdzEPT//////////wEaDKMXyD0Vnw1fg+OBNiLCATz35b7XOVvwctn6NwOwjxnQ3vKZgZqeUP0J3VBAkcYsHo+2cLPblUdWkXI2xVh7X6Wk8rzwVinRYcd/+KiaE+JZWv9ocLP3SXV6L71TSS95IJKVGBBSg9OX/3EV4WN5UWX6pQcz/BSKCUErNlQsGio2jfWUGi/04QA9O60N0DxFNkKyAoeLoAa2+Ljpjgd5Ed7BVC7E9cNCvDQgasFrdRQHjXrzGUJKG8ZL43pPdQrlKja3EM7U7Z5Fe217sQ4PQPbnKLbJxfcFMi1zg9af/1jaj0tXfO71gZqXJOZEIV5ZDEaVCjgfHW9/d4Sr+lQtOznbGYtt4RA="
   region: us-east-1
